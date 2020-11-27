@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Oxygen&display=swap');
+
+*, html, body {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0.2rem;
+    background-size: 40px 40px;
+    background-image:linear-gradient(to right, rgb(238, 238, 238) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(238, 238, 238) 1px, transparent 1px);
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+.calculator-card {
+    border: solid rgb(141, 164, 167) 1px;
+    background-color: rgb(141, 164, 167);
+    border-radius: 4px;
+    box-shadow: 1px 2px 5px 1px rgba(204, 204, 204, 0.301);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 40%;
+}
+
+@media screen and (max-width: 540px) {
+    .calculator-card {
+        min-width: 80%;
+    }
+}
+
+.calculator-header {
+    background-color: rgb(141, 164, 167);
+    padding: 1rem;
+    text-align: left;
+}
+.calculator-header p {
+    font-family: 'Lobster', cursive;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.calculator-display {
+    border-bottom: solid rgb(141, 164, 167) 1px;
+    overflow: hidden;
+}
+
+.calculator-display input {
+    border: none;
+    background-color: rgb(66, 66, 66);
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    text-align: right;
+    width: 100%;  
+}
+
+.input1 {
+    border-bottom: solid rgb(141, 164, 167) 1px;
+}
+
+button {
+    border-radius: 2px;
+    border: 1px solid rgb(141, 164, 167);
+    float: left;
+    font-size: 80%;
+    font-weight: bold;
+    min-height: 3rem;
+    position: relative;
+    width: 25%;
+}
+
+button:hover {
+    box-shadow: inset 0px 0px 3px 2px rgb(141, 164, 167);
+}
+
+button:active {
+    background-color: rgba(204, 204, 204, 0.6);
+    box-shadow: inset 2px 2px 3px 2px rgb(141, 164, 167);
+}
+
+.tm {
+    border: solid black 1px;
+    border-radius: 2px;
+    color: rgb(66, 66, 66);
+    display: inline-block;
+    font-size: 80%;
+    height:49px;   
+    margin: 0 auto;
+    padding: 0.7rem;
+    text-align: left;
+    width: 75%;
+}
+
+.tm h3 {
+    font-family: 'Lobster', cursive;
+}
+
+.pencil {
+    position: relative;
+    overflow: hidden;
+    border: solid black 2px;
+    height: 100vh;
+}
+
+.pencil img {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    left: 60%;
+    margin: 1rem;
+}
+
+@media screen and (max-width: 540px){
+    .pencil img {
+        display: none;
+    }
+}
+

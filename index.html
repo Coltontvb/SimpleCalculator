@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="pencil">
+        <img src="pencil.png" alt="pencil background image writing cvb-dev">
+    </div>
+    <div class=" calculator-card row">
+        <div class="calculator-header row">
+            <p>Simple Calculator</p>
+        </div>
+        <div class="calculator-body">
+            <div class="calculator-display">
+                <div>
+                    <div class="input1">
+                        <input type="text" value="" id="user-input-values" disabled />
+                    </div>
+                    <div class=input2>
+                        <input type="text" value="" id="user-returned-values" disabled />
+                    </div>
+                </div>
+            </div>
+            <div class="uxButtons row">
+                <button type="button" class="operator" value="+">+</button>
+                <button type="button" class="operator" value="-">-</button>
+                <button type="button" class="operator" value="*">&times;</button>
+                <button type="button" class="operator" value="/">&divide;</button>
+            </div>
+            <div class="uxButtons row">
+                <button type="button" class="operand" value="1">1</button>
+                <button type="button" class="operand" value="2">2</button>
+                <button type="button" class="operand" value="3">3</button>
+                <button type="button" class="clear" value="clear">Clear</button>
+
+            </div>
+            <div class="uxButtons row">
+                <button type="button" class="operand" value="4">4</button>
+                <button type="button" class="operand" value="5">5</button>
+                <button type="button" class="operand" value="6">6</button>
+                <button type="button" class="enter operator" value="enter">Enter</button>
+            </div>
+            <div class="uxButtons row">
+                <button type="button" class="operand" value="7">7</button>
+                <button type="button" class="operand" value="8">8</button>
+                <button type="button" class="operand" value="9">9</button>
+                <button type="button" class="dot" value=".">.</button>
+            </div>
+            <div class="uxButtons row">
+                <button type="button" class="operand" value="0">0</button>
+                <div class="tm">
+                    <h3>By: Colton Van Bastelaere</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
